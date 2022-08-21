@@ -1,0 +1,27 @@
+.navbar {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: sticky;
+  top: 0rem;
+  background-color: white;
+  z-index: 1;
+  .navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    & > a {
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+    }
+    & > img {
+      height: 2rem;
+    }
+  }
+  .navbar__active {
+    color: #afb2f3;
+    font-weight: 700;
+  }
+}

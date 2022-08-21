@@ -1,0 +1,59 @@
+.Home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  //   padding-left: 5rem;
+  position: relative;
+  .Home__loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+  }
+  .Home__mututalfund__list {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .list__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      padding-right: 10rem;
+      .container__section1 {
+        & > h3 {
+          font-size: 2rem;
+        }
+        & > ul {
+          display: flex;
+          gap: 2rem;
+          padding-left: 0rem;
+          padding-top: 1rem;
+          & > :nth-child(1) {
+            list-style: none;
+          }
+          & > li {
+            font-size: 1.3rem;
+            color: #848893;
+            font-weight: 700;
+          }
+        }
+      }
+      .list__button {
+        border: 0.2rem solid #afb2f3;
+        background-color: white;
+        color: black;
+        font-weight: 600;
+        border-radius: 0.3rem;
+        font-size: 1.2rem;
+        height: 4rem;
+        cursor: pointer;
+        align-self: center;
+      }
+    }
+  }
+}
